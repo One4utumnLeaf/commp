@@ -9,7 +9,7 @@ with open('fund_database.csv', newline = '') as fund_data:
             passwd = input("Enter password: ")
             print("Enter the following details")
             name = input("Student name: ")
-            reason = input("Reason for payment \n(Donation - 1) \n(Fees - 2) \n(Event Charges - 3) \n>")
+            reason = input("Reason for payment \n(Donation - 1) \n(Fees - 2) \n(Event Charges - 3) \n(Others - 4) \n>")
             pay = input("Payment Method: ")
             amt = input("Amount Payed: ")
     def output():
