@@ -12,6 +12,7 @@ with open('fund_database.csv', newline = '') as fund_data:
             reason = input("Reason for payment \n(Donation - 1) \n(Fees - 2) \n(Event Charges - 3) \n(Others - 4) \n>")
             pay = input("Payment Method: ")
             amt = input("Amount Payed: ")
+            ans = input("Do you want to add another record(y/n): ")
 def output():
     print("Welcome to Student Fund Management Sysytem")
     print("What operation do you want to perform")
