@@ -103,3 +103,5 @@ def delete():
                     b=b.pop(1)
         w=csv.writer(a)
         w.writerows(b)
+
+output()
