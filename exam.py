@@ -16,6 +16,7 @@ with open('fund_database.csv', newline = '') as fund_data:
             data.append([user_input])
             ans = input("Do you want to add another record(y/n): ")
         w.writerows(data)
+        
 def output():
     print("Welcome to Student Fund Management Sysytem")
     print("What operation do you want to perform")
