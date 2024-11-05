@@ -2,7 +2,7 @@ import csv
 with open('fund_database.csv', newline = '') as fund_data:
     user_input = []
     data = []
-    def input():
+    def ip():
         w = csv.writer(fund_data)
         while ans == 'y':
             code = input("Enter unique code: ")
@@ -75,7 +75,22 @@ def update():
                 break
             else:
                 print("Code not found")
-
+                
+def analyse():
+    met = input("Enter the type of analysis you want to do(avg/sum/graph): ")
+    with open("fund_database.csv", "r", newline="") as a:
+        b = csv.reader(a)
+        net = 0
+        for i in b:
+            net += i[-1]
+        avg = net/len(b)
+        if met == 'avg':
+            print(f"The average amount received till date is {avg}")
+        if met == 'sum':
+            print(f"The total sum of money received till date is {net}")
+        else:
+            print("Can not understand. Please enter correct option.")
+            
 def delete():
     with open("fund_database.csv","r",newline="") as a:
         b=csv.reader(a)
